@@ -1,7 +1,7 @@
 @charset "UTF-8";@font-face { 
 	font-family: "iconfont"; 
 	font-display: swap;
-	src: url("C:/Users/2020/Desktop/vite/src/assets/svgicons/preview/iconfont.woff2?00e1f1e20ecb1633442633e6e9842385") format("woff2"); 
+	src: url("../assets/fonts/iconfont.woff2?bbcb7b666fa025efa7bb9d8436179647") format("woff2"); 
 } 
 [class*="--icon-"]::before{
 	font-family: iconfont; 
