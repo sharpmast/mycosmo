@@ -1,7 +1,7 @@
 @charset "UTF-8";@font-face { 
 	font-family: "iconfont"; 
 	font-display: swap;
-	src: url("../assets/fonts/iconfont.woff2?00e1f1e20ecb1633442633e6e9842385") format("woff2"); 
+	src: url("C:/Users/2020/Desktop/vite/src/assets/svgicons/preview/iconfont.woff2?00e1f1e20ecb1633442633e6e9842385") format("woff2"); 
 } 
 [class*="--icon-"]::before{
 	font-family: iconfont; 
@@ -1532,7 +1532,7 @@ html[data-fls-preloader-loaded] .fls-preloader {
   }
   .residense__cards {
     grid-template-columns: 1fr;
-    gap: 1.5625rem;
+    row-gap: 1.5625rem;
   } 
 }
 @media (max-width: 47.99875rem){
@@ -1781,6 +1781,7 @@ html[data-fls-preloader-loaded] .fls-preloader {
   .membership__item {
     margin: 0 -0.9375rem;
     border-radius: 0;
+    border: none;
   }
   .observatory__card-link {
     padding: 0.625rem;
@@ -1871,7 +1872,7 @@ html[data-fls-preloader-loaded] .fls-preloader {
     margin-bottom: 2.0625rem;
   }
   .residense__cards {
-    gap: 6.25e-8rem;
+    column-gap: 0.9375rem;
   }
   .residense__card-img-title {
     font-size: 1rem;
@@ -2098,7 +2099,7 @@ html[data-fls-preloader-loaded] .fls-preloader {
     margin-bottom: clamp( 2.0625rem , 1.51704545454375rem  +  2.7272727273vw , 4.125rem );
   }
   .residense__cards {
-    gap: clamp( 6.25e-8rem , -0.52892554080625rem  +  2.6446280165vw , 2rem );
+    column-gap: clamp( 0.9375rem , 0.6565082644625rem  +  1.4049586777vw , 2rem );
   }
   .residense__card-img-title {
     font-size: clamp( 1rem , 0.86776859504375rem  +  0.6611570248vw , 1.5rem );
@@ -2354,7 +2355,7 @@ html[data-fls-preloader-loaded] .fls-preloader {
     margin-bottom: 4.125rem;
   }
   .residense__cards {
-    gap: 2rem;
+    column-gap: 2rem;
   }
   .residense__card-img-title {
     font-size: 1.5rem;
