@@ -1,0 +1,951 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<style data-fls-preloader="false" rel="preload">
+			body>*:not(.fls-preloader) {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    [data-fls-preloader-loaded] body>*:not(.fls-preloader) {
+        transition: opacity 0.5s ease 0s;
+        opacity: 1;
+        visibility: visible;
+    }
+		</style>
+		<!--
+<div class="fls-preloader">
+<div class="fls-preloader__body">
+<div class="fls-preloader__counter">0%</div>
+<div class="fls-preloader__line"><span></span></div>
+</div>
+</div>
+-->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="color-scheme" content="light">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Russo%20One:wght@400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=IBM%20Plex%20Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" href="./assets/img/favico.png">
+		<title>Подорож у космос</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1793035885094"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1793035885094">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header-scroll="" data-fls-header-scroll-show="" class="header">
+				<div class="header__container header__container--long">
+					<a href="index.html" class="header__logo">
+						<div class="header__logo-img __img">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/logo-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/logo-1200.webp" type="image/webp">
+								<img alt="Image" src="./assets/img/logo.webp">
+							</picture>
+						</div>
+					</a>
+					<nav class="header__menu menu">
+						<ul class="header__list menu__list">
+							<li>
+								<a class="menu__link" href="#residense">Зоряні оселі</a>
+							</li>
+							<li>
+								<a class="menu__link" href="#member">Зоряне коло</a>
+							</li>
+							<li>
+								<a class="menu__link" href="#archive">Колекція</a>
+							</li>
+							<li>
+								<a class="menu__link" href="#observatory">Обсерваторія</a>
+							</li>
+							<li>
+								<a class="menu__link" href="#genesis">Генезис</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__buttons">
+						<button data-fls-popup-link="popup" class="header__btn btn--violet">Увійти</button>
+					</div>
+					<div class="menu__icon">
+						<span></span>
+					</div>
+				</div>
+			</header>
+			<main class="page-home">
+				<section data-stars="" class="hero">
+					<div class="bg-img __img">
+						<picture>
+							<source media="(max-width: 600px)" srcset="./assets/img/planet-bg-600.webp" type="image/webp">
+							<source media="(max-width: 1200px)" srcset="./assets/img/planet-bg-1200.webp" type="image/webp">
+							<img alt="Image" src="./assets/img/planet-bg.webp">
+						</picture>
+					</div>
+					<div class="hero__container hero__container--long">
+						<div class="hero__text">
+							<h1 class="hero__title">
+								За межі
+								<span class="violet">Землі</span>
+								,
+								<br>
+								у
+								<span class="yellow">безмежність</span>
+							</h1>
+							<div class="hero__caption">
+								<p>
+									Цифровий досвід найвищого рівня розкоші, створений для візіонерів, мрійників і обраних, хто
+                        наважується досліджувати космос.
+
+                        Ласкаво просимо в майбутнє освоєння Всесвіту.
+								</p>
+							</div>
+							<div class="hero__buttons">
+								<div class="hero__btn btn--violet">Поринути у Всесвіт</div>
+								<div class="hero__btn btn--black">Дивитися трейлер</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section data-stars="" class="voyages">
+					<div class="voyages__container">
+						<h2 class="voyages__title title">Приватні космічні подорожі</h2>
+						<div class="voyages__subtitle subtitle">
+							Вирушайте в незабутні подорожі за межі земної атмосфери разом із
+                нашими провідними партнерами в аерокосмічній галузі. 🚀
+						</div>
+						<div class="voyages__cards">
+							<div class="voyages__card">
+								<a href="" class="voyages__card-img __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/vojages1-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/vojages1-1200.webp" type="image/webp">
+										<img alt="Зображення" src="./assets/img/vojages1.webp">
+									</picture>
+								</a>
+								<div class="voyages__card-text">
+									<h3 class="voyages__card-title">Розкішний відпочинок на орбіті</h3>
+									<div class="voyages__card-caption">
+										<p>
+											Триденна подорож орбітою з панорамними краєвидами Землі,
+                                люксом в умовах невагомості та подачею шампанського
+                                в найвищій точці орбіти.
+										</p>
+									</div>
+									<div class="voyages__card-bottom">
+										<a href="" class="voyages__card-price yellow">28,5 млн $ за особу</a>
+										<button class="voyages__card-btn btn--violet">Переглянути подорож</button>
+									</div>
+								</div>
+							</div>
+							<div class="voyages__card">
+								<a href="" class="voyages__card-img __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/vojages2-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/vojages2-1200.webp" type="image/webp">
+										<img alt="Зображення" src="./assets/img/vojages2.webp">
+									</picture>
+								</a>
+								<div class="voyages__card-text">
+									<h3 class="voyages__card-title">Експедиція на місячну орбіту</h3>
+									<div class="voyages__card-caption">
+										<p>
+											Шестиденна подорож навколо Місяця з приватними
+                                люксами, вишуканими стравами та ексклюзивними
+                                фотосесіями місячних краєвидів.
+										</p>
+									</div>
+									<div class="voyages__card-bottom">
+										<a href="" class="voyages__card-price yellow">75 млн $ за особу</a>
+										<button class="voyages__card-btn btn--violet">Переглянути подорож</button>
+									</div>
+								</div>
+							</div>
+							<div class="voyages__card">
+								<a href="" class="voyages__card-img __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/vojages3-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/vojages3-1200.webp" type="image/webp">
+										<img alt="Зображення" src="./assets/img/vojages3.webp">
+									</picture>
+								</a>
+								<div class="voyages__card-text">
+									<h3 class="voyages__card-title">Подорож на межу космосу</h3>
+									<div class="voyages__card-caption">
+										<p>
+											Двогодинний суборбітальний політ на висоті 100 км,
+                                що включає 5 хвилин невагомості та захопливі краєвиди
+                                вигнутої поверхні Землі.
+										</p>
+									</div>
+									<div class="voyages__card-bottom">
+										<a href="" class="voyages__card-price yellow">450 тис. $ за особу</a>
+										<button class="voyages__card-btn btn--violet">Переглянути подорож</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="button-bottom">
+							<button class="bottom-btn btn--violet">Переглянути всі подорожі</button>
+						</div>
+					</div>
+				</section>
+				<section id="residense" data-stars="" class="residense">
+					<div class="residense__container">
+						<h2 class="residense__title title">Небесні оселі</h2>
+						<div class="residense__subtitle subtitle">
+							Ексклюзивна нерухомість за межами Землі — від орбітальних помешкань до місячних вілл і концептуальних
+                будинків на Марсі.
+						</div>
+						<div class="residense__cards">
+							<div class="residense__card">
+								<div class="residense__card-image">
+									<div class="residense__card-img __img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/residense1-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/residense1-1200.webp" type="image/webp">
+											<img alt="Зображення" src="./assets/img/residense1.webp">
+										</picture>
+									</div>
+									<div class="residense__card-img-link">
+										<a href="" class="btn--violet">Орбітальна</a>
+									</div>
+									<div class="residense__card-img-title">Орбітальна резиденція «Елізіум»</div>
+								</div>
+								<div class="residense__card-text">
+									<div class="residense__card-top">
+										<div class="residense__card-top-item">
+											<div class="residense__card-top-label">Висота орбіти</div>
+											<div class="residense__card-top-value">450 км</div>
+										</div>
+										<div class="residense__card-top-item">
+											<div class="residense__card-top-label">Площа</div>
+											<div class="residense__card-top-value">175 м²</div>
+										</div>
+										<div class="residense__card-top-item">
+											<div class="residense__card-top-label">Доступність</div>
+											<div class="residense__card-top-value yellow">2026</div>
+										</div>
+									</div>
+									<div class="residense__card-caption">
+										<p>
+											Приватний модуль із панорамним оглядом Землі на 360°, лаунж-зоною в умовах невагомості,
+                                власним шлюзом і персональним консьєрж-сервісом.
+										</p>
+									</div>
+									<div class="residense__card-bottom">
+										<a href="" class="residense__card-link yellow">95 млн $</a>
+										<button class="residense__card-btn btn--violet">Віртуальний тур</button>
+									</div>
+								</div>
+							</div>
+							<div class="residense__card">
+								<div class="residense__card-image">
+									<div class="residense__card-img __img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/residense2-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/residense2-1200.webp" type="image/webp">
+											<img alt="Зображення" src="./assets/img/residense2.webp">
+										</picture>
+									</div>
+									<div class="residense__card-img-link">
+										<a href="" class="btn--violet">Місячна</a>
+									</div>
+									<div class="residense__card-img-title">Місячна вілла «Транквіліті»</div>
+								</div>
+								<div class="residense__card-text">
+									<div class="residense__card-top">
+										<div class="residense__card-top-item">
+											<div class="residense__card-top-label">Розташування</div>
+											<div class="residense__card-top-value">Море Спокою</div>
+										</div>
+										<div class="residense__card-top-item">
+											<div class="residense__card-top-label">Площа</div>
+											<div class="residense__card-top-value">320 м²</div>
+										</div>
+										<div class="residense__card-top-item">
+											<div class="residense__card-top-label">Доступність</div>
+											<div class="residense__card-top-value yellow">2029</div>
+										</div>
+									</div>
+									<div class="residense__card-caption">
+										<p>
+											Ексклюзивна нерухомість на Місяці з куполом для споглядання Землі, приватним садом у
+                                місячному реголіті та правами на видобуток гелію-3.
+										</p>
+									</div>
+									<div class="residense__card-bottom">
+										<a href="" class="residense__card-link yellow">225 млн $</a>
+										<button class="residense__card-btn btn--violet">Віртуальний тур</button>
+									</div>
+								</div>
+							</div>
+							<div class="residense__card">
+								<div class="residense__card-image">
+									<div class="residense__card-img __img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/residense3-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/residense3-1200.webp" type="image/webp">
+											<img alt="Зображення" src="./assets/img/residense3.webp">
+										</picture>
+									</div>
+									<div class="residense__card-img-link">
+										<a href="" class="btn--violet">Марсіанська</a>
+									</div>
+									<div class="residense__card-img-title">Марсіанська резиденція «Олімпус»</div>
+								</div>
+								<div class="residense__card-text">
+									<div class="residense__card-top">
+										<div class="residense__card-top-item">
+											<div class="residense__card-top-label">Розташування</div>
+											<div class="residense__card-top-value">База біля гори Олімп</div>
+										</div>
+										<div class="residense__card-top-item">
+											<div class="residense__card-top-label">Площа</div>
+											<div class="residense__card-top-value">485 м²</div>
+										</div>
+										<div class="residense__card-top-item">
+											<div class="residense__card-top-label">Доступність</div>
+											<div class="residense__card-top-value yellow">2035</div>
+										</div>
+									</div>
+									<div class="residense__card-caption">
+										<p>
+											Концептуальна нерухомість із краєвидами на гори, приватною теплицею, правами на
+                                використання водних ресурсів та ексклюзивними правами на видобуток корисних копалин.
+										</p>
+									</div>
+									<div class="residense__card-bottom">
+										<a href="" class="residense__card-link yellow">450 млн $</a>
+										<button class="residense__card-btn btn--violet">Огляд концепції</button>
+									</div>
+								</div>
+							</div>
+							<div class="residense__card">
+								<div class="residense__card-image">
+									<div class="residense__card-img __img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/residense4-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/residense4-1200.webp" type="image/webp">
+											<img alt="Зображення" src="./assets/img/residense4.webp">
+										</picture>
+									</div>
+									<div class="residense__card-img-link">
+										<a href="" class="btn--violet">Космічний корабель</a>
+									</div>
+									<div class="residense__card-img-title">Приватний корабель «Небесний мандрівник»</div>
+								</div>
+								<div class="residense__card-text">
+									<div class="residense__card-top">
+										<div class="residense__card-top-item">
+											<div class="residense__card-top-label">Маршрут</div>
+											<div class="residense__card-top-value">Від Землі до Місяця</div>
+										</div>
+										<div class="residense__card-top-item">
+											<div class="residense__card-top-label">Місткість</div>
+											<div class="residense__card-top-value">8 осіб</div>
+										</div>
+										<div class="residense__card-top-item">
+											<div class="residense__card-top-label">Доступність</div>
+											<div class="residense__card-top-value yellow">2027</div>
+										</div>
+									</div>
+									<div class="residense__card-caption">
+										<p>
+											Приватна космічна яхта з індивідуальним дизайном інтер'єру, автономною навігацією та
+                                правом на стикування на всіх станціях «Celestia».
+										</p>
+									</div>
+									<div class="residense__card-bottom">
+										<a href="" class="residense__card-link yellow">175 млн $</a>
+										<button class="residense__card-btn btn--violet">Віртуальний тур</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="button-bottom">
+							<button class="bottom-btn btn--violet">Переглянути всі об’єкти нерухомості</button>
+						</div>
+					</div>
+				</section>
+				<section id="member" data-stars="" class="membership">
+					<div class="membership__container">
+						<h2 class="membership__title title">Членство в Зоряному колі</h2>
+						<div class="membership__subtitle subtitle">
+							Приєднуйтеся до нашого ексклюзивного клубу учасників, щоб
+                отримати безпрецедентний доступ до космічних вражень та особливих привілеїв.
+						</div>
+						<div class="membership__items">
+							<div class="membership__item">
+								<div class="membership__item-label">
+									<a href="">Платина</a>
+								</div>
+								<div class="membership__item-title">Космічний дослідник</div>
+								<div class="membership__item-caption">
+									Розпочніть свою подорож за межі Землі, отримавши пріоритетний
+                        доступ до суборбітальних польотів та ексклюзивних подій.
+								</div>
+								<ul class="membership__item-list">
+									<li class="--icon-check">Пріоритетне бронювання суборбітальних подорожей</li>
+									<li class="--icon-check">Запрошення на щорічні заходи «Зоряного гала-вечора»</li>
+									<li class="--icon-check">Цифровий космічний паспорт із відстеженням подорожей</li>
+									<li class="--icon-check">Доступ до ексклюзивних заходів обсерваторії для учасників</li>
+									<li class="--icon-check">Послуги персонального консьєржа для всіх бронювань</li>
+								</ul>
+								<div class="membership__item-price-label">Річний внесок</div>
+								<div class="membership__item-price">
+									<div class="membership__item-price-value">250 000 $</div>
+									<div class="membership__item-price-caption">Лише 500 учасників</div>
+								</div>
+								<div class="membership__item-button">
+									<button data-fls-popup-link="popup" class="membership__item-btn btn--violet">Подати заявку на
+                            членство</button>
+								</div>
+							</div>
+							<div class="membership__item">
+								<div class="membership__item-label">
+									<a href="">Діамант</a>
+								</div>
+								<div class="membership__item-title">Орбітальний мандрівник</div>
+								<div class="membership__item-caption">
+									Відкрийте для себе всі можливості навколоземного космосу
+                        з пріоритетним доступом до орбітальних подорожей.
+								</div>
+								<ul class="membership__item-list">
+									<li class="--icon-check">Усі переваги платинового рівня</li>
+									<li class="--icon-check">Пріоритетне бронювання орбітальних подорожей</li>
+									<li class="--icon-check">Індивідуальні тренування з підготовки астронавтів</li>
+									<li class="--icon-check">Ексклюзивні мистецькі заходи в умовах невагомості</li>
+									<li class="--icon-check">Ранній доступ до небесних осель</li>
+									<li class="--icon-check">Космічний журнал подорожей у форматі NFT із підтвердженням маршрутів</li>
+								</ul>
+								<div class="membership__item-price-label">Річний внесок</div>
+								<div class="membership__item-price">
+									<div class="membership__item-price-value">1 250 000 $</div>
+									<div class="membership__item-price-caption">Лише 100 учасників</div>
+								</div>
+								<div class="membership__item-button">
+									<button data-fls-popup-link="popup" class="membership__item-btn btn--violet">Подати заявку на
+                            членство</button>
+								</div>
+							</div>
+							<div class="membership__item">
+								<div class="membership__item-label">
+									<a href="">Космічний</a>
+								</div>
+								<div class="membership__item-title">Міжпланетний першопроходець</div>
+								<div class="membership__item-caption">
+									Наш найексклюзивніший рівень членства з безпрецедентним
+                        доступом до подорожей на Місяць і за його межі.
+								</div>
+								<ul class="membership__item-list">
+									<li class="--icon-check">Усі переваги діамантового рівня</li>
+									<li class="--icon-check">Пріоритетне бронювання подорожей на Місяць</li>
+									<li class="--icon-check">Першочерговий доступ до експедицій на Марс</li>
+									<li class="--icon-check">Запрошення на приватні урочисті заходи на Місяці</li>
+									<li class="--icon-check">Право давати назви новим космічним відкриттям</li>
+									<li class="--icon-check">Персональна команда космічних консьєржів</li>
+									<li class="--icon-check">Пріоритетні інвестиційні можливості в космічні проєкти</li>
+								</ul>
+								<div class="membership__item-price-label">Річний внесок</div>
+								<div class="membership__item-price">
+									<div class="membership__item-price-value">5 000 000 $</div>
+									<div class="membership__item-price-caption">Лише 25 учасників</div>
+								</div>
+								<div class="membership__item-button">
+									<button data-fls-popup-link="popup" class="membership__item-btn btn--violet">Подати заявку на
+                            членство</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="archive" data-stars="" class="voyages archive">
+					<div class="voyages__container">
+						<h2 class="voyages__title archive__title title">Архів безмежності</h2>
+						<div class="voyages__subtitle archive__subtitle subtitle">
+							Добірка унікальних космічних колекційних предметів
+                та артефактів для справжніх поціновувачів Всесвіту.
+						</div>
+						<div class="voyages__cards">
+							<div class="voyages__card archive__card">
+								<a href="" class="voyages__card-img __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/archive1-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/archive1-1200.webp" type="image/webp">
+										<img alt="Зображення" src="./assets/img/archive1.webp">
+									</picture>
+								</a>
+								<div class="voyages__card-text">
+									<h3 class="voyages__card-title">Намисто з метеоритом «Ліра»</h3>
+									<div class="voyages__card-caption">
+										<p>
+											Підвіска з білого золота 18 каратів із фрагментом Челябінського метеорита вагою 4,5
+                                карата, оздоблена діамантами загальною вагою 2,3 карата та чистотою VS.
+										</p>
+									</div>
+									<div class="voyages__card-bottom">
+										<a href="" class="voyages__card-price yellow">175 000 $</a>
+										<button class="voyages__card-btn btn--violet">Докладніше</button>
+									</div>
+								</div>
+							</div>
+							<div class="voyages__card archive__card">
+								<a href="" class="voyages__card-img __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/archive2-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/archive2-1200.webp" type="image/webp">
+										<img alt="Зображення" src="./assets/img/archive2.webp">
+									</picture>
+								</a>
+								<div class="voyages__card-text">
+									<h3 class="voyages__card-title">Парфуми «Місячна сутність Селени»</h3>
+									<div class="voyages__card-caption">
+										<p>
+											Аромат обмеженої серії зі справжніми частинками місячного реголіту, представлений у
+                                вручну виготовленому кришталевому флаконі з платиновими елементами.
+										</p>
+									</div>
+									<div class="voyages__card-bottom">
+										<a href="" class="voyages__card-price yellow">95 000 $</a>
+										<button class="voyages__card-btn btn--violet">Докладніше</button>
+									</div>
+								</div>
+							</div>
+							<div class="voyages__card archive__card">
+								<a href="" class="voyages__card-img __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/archive3-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/archive3-1200.webp" type="image/webp">
+										<img alt="Зображення" src="./assets/img/archive3.webp">
+									</picture>
+								</a>
+								<div class="voyages__card-text">
+									<h3 class="voyages__card-title">Орбітальний хронограф</h3>
+									<div class="voyages__card-caption">
+										<p>
+											Механічний годинник, що побував у космосі, з циферблатом із метеорита Гібеон, платиновим
+                                корпусом і сапфіровим склом, на якому зображено 14 обертів навколо Землі.
+										</p>
+									</div>
+									<div class="voyages__card-bottom">
+										<a href="" class="voyages__card-price yellow">225 000 $</a>
+										<button class="voyages__card-btn btn--violet">Докладніше</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="button-bottom">
+							<button class="bottom-btn btn--violet">Переглянути весь архів</button>
+						</div>
+					</div>
+				</section>
+				<section id="observatory" data-stars="" class="observatory">
+					<div class="observatory__container">
+						<h2 class="observatory__title title">Обсерваторія</h2>
+						<div class="observatory__subtitle subtitle">
+							Відкрийте для себе Всесвіт завдяки ексклюзивним подіям наживо,
+                унікальним небесним явищам і захопливим враженням.
+						</div>
+						<div class="observatory__items">
+							<div class="observatory__card">
+								<div class="observatory__card-image">
+									<div class="observatory__card-img __img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/observatori11-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/observatori11-1200.webp" type="image/webp">
+											<img alt="Зображення" src="./assets/img/observatori11.webp">
+										</picture>
+									</div>
+									<div class="observatory__card-link">
+										<a href="" class="btn--violet">Головна подія</a>
+									</div>
+								</div>
+								<div class="observatory__card-text">
+									<div class="observatory__card-top">
+										<div class="observatory__card-title">Гала-вечір повного місячного затемнення</div>
+										<div class="observatory__card-date">
+											<div class="observatory__card-date-label">Дата</div>
+											<div class="observatory__card-date-value">14 жовтня 2025 року</div>
+										</div>
+									</div>
+									<div class="observatory__card-caption">
+										<p>
+											Насолодіться захопливим повним місячним затемненням у нашій приватній обсерваторії на
+                                Мауї. На вас чекають вишукана кухня, рідкісні вінтажні шампанські вина та супровід
+                                досвідчених астрономів.
+										</p>
+									</div>
+									<div class="observatory__card-bottom">
+										<div class="observatory__card-price yellow">35 000 $ за гостя</div>
+										<button data-fls-popup-link="popup" class="observatory__card-btn btn--violet">Забронювати
+                                участь</button>
+									</div>
+								</div>
+							</div>
+							<div class="observatory__cards">
+								<div class="observatory__card">
+									<div class="observatory__card-text">
+										<div class="observatory__card-top">
+											<div class="observatory__card-title observatory__card-title--small">Спостереження за
+                                    сонячною бурею</div>
+											<div class="observatory__card-date">
+												<div class="observatory__card-date-label">Дата</div>
+												<div class="observatory__card-date-value">22–25 травня 2025 року</div>
+											</div>
+										</div>
+										<div class="observatory__card-caption">
+											<p>
+												Спостерігайте за північним сяйвом із нашого приватного арктичного маєтку під час
+                                    прогнозованої потужної сонячної бурі.
+											</p>
+										</div>
+										<div class="observatory__card-bottom">
+											<div class="observatory__card-price yellow">45 000 $ за гостя</div>
+											<button data-fls-popup-link="popup" class="observatory__card-btn btn--violet">Забронювати</button>
+										</div>
+									</div>
+								</div>
+								<div class="observatory__card">
+									<div class="observatory__card-text">
+										<div class="observatory__card-top">
+											<div class="observatory__card-title observatory__card-title--small">Метеорний потік
+                                    Персеїди</div>
+											<div class="observatory__card-date">
+												<div class="observatory__card-date-label">Дата</div>
+												<div class="observatory__card-date-value">11–13 серпня 2025 року</div>
+											</div>
+										</div>
+										<div class="observatory__card-caption">
+											<p>
+												Приватний відпочинок у пустелі з розкішним проживанням і можливістю спостерігати за
+                                    найяскравішим метеорним потоком року.
+											</p>
+										</div>
+										<div class="observatory__card-bottom">
+											<div class="observatory__card-price yellow">28 000 $ за гостя</div>
+											<button data-fls-popup-link="popup" class="observatory__card-btn btn--violet">Забронювати</button>
+										</div>
+									</div>
+								</div>
+								<div class="observatory__card">
+									<div class="observatory__card-text">
+										<div class="observatory__card-top">
+											<div class="observatory__card-title observatory__card-title--small">Звукові ландшафти
+                                    далекого космосу</div>
+											<div class="observatory__card-date">
+												<div class="observatory__card-date-label">Дата</div>
+												<div class="observatory__card-date-value">11–13 серпня 2025 року</div>
+											</div>
+										</div>
+										<div class="observatory__card-caption">
+											<p>
+												Захопливе аудіовізуальне дійство, у якому космічне випромінювання та зоряні явища
+                                    перетворюються на звуки й візуальні образи.
+											</p>
+										</div>
+										<div class="observatory__card-bottom">
+											<div class="observatory__card-price yellow">15 000 $ за гостя</div>
+											<button data-fls-popup-link="popup" class="observatory__card-btn btn--violet">Забронювати</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section data-stars="" class="naming">
+					<div class="naming__container">
+						<div class="naming__text">
+							<h2 class="naming__title">Послуга присвоєння небесних імен</h2>
+							<div class="naming__caption">
+								<p>
+									Залиште свій слід у космосі завдяки нашій ексклюзивній програмі присвоєння імен.
+                        Назвіть зорю, підтримайте відкриття астероїда або присвятіть ім’я кометі —
+                        з офіційною реєстрацією в астрономічних каталогах.
+								</p>
+							</div>
+							<div class="naming__buttons">
+								<button class="naming__btn btn--violet">Обрати варіант іменування</button>
+							</div>
+						</div>
+						<div class="naming__image">
+							<div class="naming__cirkles">
+								<div class="naming__circkle naming__circkle--1"></div>
+								<div class="naming__circkle naming__circkle--2"></div>
+								<div class="naming__circkle naming__circkle--3"></div>
+							</div>
+							<div class="naming__image-text">
+								<div class="naming__image-img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/selestial1-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/selestial1-1200.webp" type="image/webp">
+										<img alt="Зоряне небо" src="./assets/img/selestial1.webp">
+									</picture>
+								</div>
+								<div class="naming__image-title">Ваша спадщина серед зірок</div>
+								<div class="naming__image-subtitle">Навіки збережена в астрономічних базах даних</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="genesis" data-stars="" class="genesis">
+					<div class="genesis__container">
+						<h2 class="genesis__title title">Журнал Генезис</h2>
+						<div class="genesis__subtitle subtitle">
+							Захопливі історії та глибокі роздуми астронавтів, космічних філософів,
+                футурологів і архітекторів-новаторів.
+						</div>
+						<div class="genesis__items">
+							<div class="genesis__item">
+								<div class="genesis__item-img __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/genesis1-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/genesis1-1200.webp" type="image/webp">
+										<img alt="Image" src="./assets/img/genesis1.webp">
+									</picture>
+								</div>
+								<div class="genesis__item-text">
+									<div class="genesis__item-top">
+										<div class="genesis__item-top-title">Філософія</div>
+										<div class="genesis__item-top-value">12 хв читання</div>
+									</div>
+									<div class="genesis__item-title">Ефект огляду Землі:
+                            трансформація свідомості</div>
+									<div class="genesis__item-caption">
+										<p>
+											Колишня астронавтка, докторка Елена Васкес, розповідає,
+                                як погляд на Землю з космосу докорінно змінює
+                                людське сприйняття світу та систему цінностей.
+										</p>
+									</div>
+									<div class="genesis__item-bottom">
+										<div class="genesis__item-bottom-img __img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/crew1-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/crew1-1200.webp" type="image/webp">
+												<img alt="Image" src="./assets/img/crew1.webp">
+											</picture>
+										</div>
+										<div class="genesis__item-bottom-text">
+											<div class="genesis__item-bottom-name">Докторка Елена Васкес</div>
+											<div class="genesis__item-bottom-caption">Колишня командирка МКС</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="genesis__item">
+								<div class="genesis__item-img __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/genesis2-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/genesis2-1200.webp" type="image/webp">
+										<img alt="Image" src="./assets/img/genesis2.webp">
+									</picture>
+								</div>
+								<div class="genesis__item-text">
+									<div class="genesis__item-top">
+										<div class="genesis__item-top-title">Архітектура</div>
+										<div class="genesis__item-top-value">15 хв читання</div>
+									</div>
+									<div class="genesis__item-title">Проєктування безмежності:
+                            архітектура космосу</div>
+									<div class="genesis__item-caption">
+										<p>
+											Відомий архітектор Хіросі Накамура розкриває
+                                принципи проєктування придатних для життя просторів
+                                у найсуворішому середовищі, відомому людству.
+										</p>
+									</div>
+									<div class="genesis__item-bottom">
+										<div class="genesis__item-bottom-img __img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/crew2-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/crew2-1200.webp" type="image/webp">
+												<img alt="Image" src="./assets/img/crew2.webp">
+											</picture>
+										</div>
+										<div class="genesis__item-bottom-text">
+											<div class="genesis__item-bottom-name">Хіросі Накамура</div>
+											<div class="genesis__item-bottom-caption">Архітектор космічних поселень</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="genesis__item">
+								<div class="genesis__item-img __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/genesis3-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/genesis3-1200.webp" type="image/webp">
+										<img alt="Image" src="./assets/img/genesis3.webp">
+									</picture>
+								</div>
+								<div class="genesis__item-text">
+									<div class="genesis__item-top">
+										<div class="genesis__item-top-title">Економіка</div>
+										<div class="genesis__item-top-value">18 хв читання</div>
+									</div>
+									<div class="genesis__item-title">Орбітальна економіка
+                            на трильйони доларів</div>
+									<div class="genesis__item-caption">
+										<p>
+											Футурологиня та економістка, докторка Аїша Мбекі,
+                                досліджує, як освоєння космічної промисловості змінить
+                                світову економіку та створить безпрецедентні статки.
+										</p>
+									</div>
+									<div class="genesis__item-bottom">
+										<div class="genesis__item-bottom-img __img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/crew3-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/crew3-1200.webp" type="image/webp">
+												<img alt="Image" src="./assets/img/crew3.webp">
+											</picture>
+										</div>
+										<div class="genesis__item-bottom-text">
+											<div class="genesis__item-bottom-name">Докторка Аїша Мбекі</div>
+											<div class="genesis__item-bottom-caption">Економістка космічної галузі</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="communiti">
+							<div class="communiti__text">
+								<div class="communiti__title">Приєднуйтеся до нашої космічної спільноти</div>
+								<div class="communiti__caption">
+									Підпишіться, щоб отримувати ексклюзивні статті,
+                        запрошення на події та новини з космосу безпосередньо на свою електронну пошту.
+								</div>
+							</div>
+							<form action="#" class="communiti__form">
+								<input type="text" placeholder="Ваша електронна адреса" class="communiti__form-input">
+								<button class="communiti__form-btn btn--violet">Підписатися</button>
+								<div class="communiti__form-text">
+									Підписуючись, ви погоджуєтеся з нашою політикою конфіденційності та умовами користування.
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+			<div data-fls-popup="popup" aria-hidden="true" class="popup">
+				<div data-fls-popup-wrapper="" class="popup__wrapper">
+					<div data-fls-popup-body="" class="popup__body">
+						<button data-fls-popup-close="" type="button" class="popup__close">
+							<img src="./assets/img/close.svg" alt="Image">
+						</button>
+						<div data-fls-popup-content="" class="popup__text">
+							<form action="#" class="popup__form">
+								<div class="popup__form-title">Напишіть нам</div>
+								<div class="popup__form-caption">Ми вам обов'язково зателефонуємо</div>
+								<label for="name" class="popup__form-label">Ваше ім'я</label>
+								<input type="text" id="name" placeholder="Ваше ім'я" class="popup__form-input">
+								<label for="phone" class="popup__form-label">Номер телефону</label>
+								<input type="text" id="phone" placeholder="Номер телефону" class="popup__form-input">
+								<label for="message" class="popup__form-label">Повідомлення</label>
+								<textarea name="text" placeholder="Повідомлення" id="message"></textarea>
+								<button type="submit" class="form__btn">Відправити</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer data-stars="" id="contacts" class="footer" data-fls-footer="">
+				<div class="footer__bg __img">
+					<picture>
+						<source media="(max-width: 600px)" srcset="./assets/img/herobg-600.webp" type="image/webp">
+						<source media="(max-width: 1200px)" srcset="./assets/img/herobg-1200.webp" type="image/webp">
+						<img alt="Image" src="./assets/img/herobg.webp">
+					</picture>
+				</div>
+				<div class="footer__container">
+					<div class="footer__logo">
+						<div class="footer__logo-img __img">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/logo-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/logo-1200.webp" type="image/webp">
+								<img alt="Image" src="./assets/img/logo.webp">
+							</picture>
+						</div>
+						<div class="footer__logo-title">Небесна ніч</div>
+						<div class="footer__logo-subtitle">
+							Цифровий досвід найвищого рівня розкоші, створений для візіонерів, мрійників та обраних, хто наважується
+                вийти за межі Землі.
+						</div>
+						<div class="footer__icons">
+							<a href="" class="footer__icon --icon-insta"></a>
+							<a href="" class="footer__icon --icon-fb"></a>
+							<a href="" class="footer__icon --icon-telegram"></a>
+						</div>
+					</div>
+					<div data-fls-spollers="767" class="footer__navigation">
+						<details class="footer__links">
+							<summary class="footer__links-title">Враження</summary>
+							<ul class="footer__list">
+								<li>
+									<a href="" class="footer__link">Приватні подорожі</a>
+								</li>
+								<li>
+									<a href="" class="footer__link">Небесні оселі</a>
+								</li>
+								<li>
+									<a href="" class="footer__link">Зоряне коло</a>
+								</li>
+								<li>
+									<a href="" class="footer__link">Архів безмежності</a>
+								</li>
+								<li>
+									<a href="" class="footer__link">Події обсерваторії</a>
+								</li>
+							</ul>
+						</details>
+					</div>
+					<div data-fls-spollers="767" class="footer__navigation">
+						<details class="footer__links">
+							<summary class="footer__links-title">Компанія</summary>
+							<ul class="footer__list">
+								<li>
+									<a href="" class="footer__link">Про нас</a>
+								</li>
+								<li>
+									<a href="" class="footer__link">Наші партнери</a>
+								</li>
+								<li>
+									<a href="" class="footer__link">Кар'єра</a>
+								</li>
+								<li>
+									<a href="" class="footer__link">Преса</a>
+								</li>
+								<li>
+									<a href="" class="footer__link">Контакти</a>
+								</li>
+							</ul>
+						</details>
+					</div>
+					<div data-fls-spollers="767" class="footer__navigation">
+						<details class="footer__links">
+							<summary class="footer__links-title">Правова інформація</summary>
+							<ul class="footer__list">
+								<li>
+									<a href="" class="footer__link">Умови користування</a>
+								</li>
+								<li>
+									<a href="" class="footer__link">Політика конфіденційності</a>
+								</li>
+								<li>
+									<a href="" class="footer__link">Політика використання файлів cookie</a>
+								</li>
+								<li>
+									<a href="" class="footer__link">Відмова від відповідальності за космічні подорожі</a>
+								</li>
+								<li>
+									<a href="" class="footer__link">Ліцензування</a>
+								</li>
+							</ul>
+						</details>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
